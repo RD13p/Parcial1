@@ -1,0 +1,41 @@
+html {
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(104, 104, 104);
+}
+
+img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    border: 5px double white;
+}
+
+h1,
+h2,
+h3,
+footer {
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+li {
+    margin: 15px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
