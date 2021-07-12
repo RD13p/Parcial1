@@ -1,29 +1,28 @@
-header,.content{
-  display: none;
-  }
-  
+header,
+.content {
+    display: none;
+}
 
-  /*
+
+/*
 
 (1) Modifica el codigo flex para que la dirección de los elementos sean en columna
   */
 
-  .nav {
-      display: flex;
-      flex-direction: row;
-      height: 100vh;
-      list-style: none;
-      justify-content:space-around;
-  
-    }
+.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    list-style: none;
+    justify-content: space-around;
+}
 
-  
-  .nav > li {
-      margin: 10px;
-      flex-basis: auto;
-  }
+.nav>li {
+    margin: 10px;
+    flex-basis: auto;
+}
 
-  li {
+li {
     display: flex;
     border: solid;
     text-align: center;
@@ -34,73 +33,68 @@ header,.content{
 }
 
 
-  /*Device = Tablets, Ipads (portrait)
+/*Device = Tablets, Ipads (portrait)
     Screen = B/w 600px to 990px*/
-    @media (min-width:600px) and (max-width: 990px)  {
-  
-      .nav {
-/*
+
+@media (min-width:600px) and (max-width: 990px) {
+    .nav {
+        /*
 (2) Agrega el código necesartio de flex para que los elementos de navegación aparezcan en filas como en la imagen.
 */
+        flex-direction: row;
+        justify-content: flex-end;
         height: auto;
-    
-      }
-
-
-
-      .content{
+    }
+    li {
+        width: 20%;
+    }
+    .content {
         display: flex;
         justify-content: space-evenly;
         border: solid;
         border-width: 1px;
     }
-    
-      .aside {
+    .aside {
         border: solid;
         width: 30%;
         border-width: 1px;
-        
-      }
-    
-      .slidebox{
-
+    }
+    .slidebox {
         display: flex;
         justify-content: space-evenly;
         border: solid;
         border-width: 1px;
-       
-      }
-    
-      .article{
-          width: 70%;
-      }
-  
-    .poem{
+    }
+    .article {
+        width: 70%;
+    }
+    .poem {
         display: flex;
         border: solid;
         border-width: 1px;
         justify-content: flex-start;
     }
-  }
-  
-  
-  @media (min-width:991px) {
-  
+}
+
+@media (min-width:991px) {
     header {
-/*
+        /*
 (3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex)
-
-*/      
-      }
-
-      .nav {
-/*
+      
+*/
+        display: flex;
+    }
+    .nav {
+        /*
 (3.1) Utiliza el mismo .nav del media query anterior
 */
+        flex-direction: row;
+        justify-content: flex-end;
         height: auto;
-
-      }
-
+    }
+    li {
+        width: 20%;
+    }
     h2 {
         border: solid;
         border-width: 1px;
@@ -108,52 +102,38 @@ header,.content{
         display: flex;
         justify-content: space-evenly;
     }
-    
-    
-      .content{
+    .content {
         display: flex;
         justify-content: space-evenly;
         border: solid;
         border-width: 1px;
     }
-    
-      .aside {
+    .aside {
         display: flex;
         flex-direction: column;
         border: solid;
         width: 30%;
         border-width: 1px;
-        
-      }
-    
-      .slidebox{
+    }
+    .slidebox {
         display: flex;
         justify-content: space-evenly;
         border: solid;
         border-width: 1px;
-       
-      }
-    
-      .article{
-        
-/*
+    }
+    .article {
+        /*
 /*
 (4) Agrega codigo flex papara modificar el posicionamiento de los articulos en filas.
 
-*/   
-
-          width: 70%;
-      }
-    
-    
-    .poem{
+*/
+        display: flex;
+        width: 70%;
+    }
+    .poem {
         display: flex;
         border: solid;
         border-width: 1px;
         justify-content: flex-start;
     }
-  }
-  
-  
-    
-  
+}
